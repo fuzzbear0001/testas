@@ -328,7 +328,7 @@ app.get("/news", (req, res) => {
     io.on('connection', socket => {
         io.emit("userCount", io.engine.clientsCount);
     });
-    http.listen(3000, () => { console.log("[bhbotlist.xyz]: Website running port 3000.")});
+    http.listen(80, () => { console.log("[bhbotlist.xyz]: Website running port 80.")});
 
     //------------------- Routers -------------------//
 
